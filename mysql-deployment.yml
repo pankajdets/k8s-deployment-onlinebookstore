@@ -38,7 +38,7 @@ spec: #inside your deployment we need to provide spec how this deployment api wi
             - name: onlinebookstore-dbscript 
               mountPath: /docker-entrypoint-initdb.d #this defination is given in hub.docker.com
         #but outside your container it need to be attached with mnt data. 
-        volumes: #the name of the volume and the mount will be same
+    volumes: #the name of the volume and the mount will be same
           - name: mysql-persistent-volume 
             persistentVolumeClaim:
             #mapped to pvc claim we created earlier
