@@ -27,7 +27,7 @@ spec: #inside your deployment we need to provide spec how this deployment api wi
                 name: mysql 
             env:
               - name: DB_HOSTNAME
-                value: 192.168.91.35
+                value: 10.101.241.37
               - name: DB_PORT
                 value: "3306"
               - name: DB_NAME 
