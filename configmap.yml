@@ -1,0 +1,9 @@
+apiVersion: v1 
+kind: ConfigMap
+metadata:
+  name: onlinebookstore-dbcreation-script
+data:
+  mysql_onlinebookstore.sql: |
+    DROP DATABASE IF EXISTS onlinebookstoredb;
+    CREATE DATABASE onlinebookstoredb;
+#this config map you can compare the same as user data. 
